@@ -101,3 +101,11 @@ header {
   background-color: #4c79d3;
   cursor: pointer;
 }
+
+.logout {
+  min-width: 5rem !important;
+}
+
+.menu {
+  margin-right: 20px;
+}
