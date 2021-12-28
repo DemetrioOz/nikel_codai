@@ -42,7 +42,7 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
-            <div class="d-flex">
+            <div class="d-flex menu">
               <a href="home.html">
                 <button class="btn" type="button">
                   <i class="bi bi-house-door-fill fs-4"></i>
@@ -63,8 +63,15 @@
                 >
                   <i class="bi bi-person-circle fs-4"></i>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Sair</a></li>
+                <ul
+                  class="dropdown-menu logout"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li id="logout-button">
+                    <button id="logout-button" class="dropdown-item logout">
+                      Sair
+                    </button>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -100,14 +107,7 @@
                       <th scope="col">Descrição</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">08/12/2020</th>
-                      <td>R$ 50,00</td>
-                      <td>Saída</td>
-                      <td>Gasolina</td>
-                    </tr>
-                  </tbody>
+                  <tbody id="transactions-list"></tbody>
                 </table>
               </div>
             </div>
@@ -120,5 +120,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./js/transactions.js"></script>
   </body>
 </html>
